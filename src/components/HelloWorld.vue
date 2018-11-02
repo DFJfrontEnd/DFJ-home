@@ -23,6 +23,7 @@
       switchLang() {
         window.i18n.locale = (window.i18n.locale == 'zh') ? 'en' : 'zh';
         this.title = this.$t('home.title');
+
       }
     }
   }
