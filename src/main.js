@@ -24,7 +24,7 @@ window.i18n = new VueI18n({
 window.appVue = new Vue({
   el: '#app',
   data: {
-    eventHub: new Vue() //
+    eventHub: new Vue() //全局事件注册
   },
   router,
   i18n,
