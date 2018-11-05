@@ -1,5 +1,5 @@
 <template>
-  <div id="house-property">
+  <div id="house-property" class="pt-t">
     海外房产
   </div>
 </template>

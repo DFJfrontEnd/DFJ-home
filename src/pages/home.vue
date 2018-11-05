@@ -1,12 +1,15 @@
 <template>
   <div id="home">
-    <NavigationBar></NavigationBar>
+    <NavigationBar :isHomePage="true"></NavigationBar>
   </div>
 </template>
 
 <script>
-  import NavigationBar from '@/shared/navigation-bar';
+  import NavigationBar from '../shared/navigation-bar';
 
+  /**
+   * 全站首页
+   */
   export default {
     name: "home",
     data() {
