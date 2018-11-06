@@ -17,7 +17,13 @@ const LangValue = {
   'en': 'EN' //英文
 }
 
+//轮播页面类型枚举枚举
+const BannerPageTypes = {
+  Start: 8
+}
+
 export {
   RequestType,
   LangValue,
+  BannerPageTypes,
 }

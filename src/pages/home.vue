@@ -20,7 +20,7 @@
       NavigationBar
     },
     created() {
-      this.getHomeBanner();
+      this.getHomeBanner(2);
     },
     methods: {
       /**
