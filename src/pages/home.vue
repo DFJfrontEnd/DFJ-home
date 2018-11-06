@@ -7,6 +7,7 @@
 <script>
   import NavigationBar from '../shared/navigation-bar';
   import {queryBanner} from "../public/service/http"
+  import {BannerPageTypes} from "../public/enums/enums"
 
   /**
    * 全站首页
@@ -20,16 +21,17 @@
       NavigationBar
     },
     created() {
-      this.getHomeBanner(2);
+      this.getHomeBanner(BannerPageTypes.Home);
     },
     methods: {
       /**
+       *获取首页轮播图
        *
        * @param pageType 页面类型
        */
       async getHomeBanner(pageType) {
         let data = await queryBanner(pageType);
-        console.log('轮播图返回数据',data)
+        console.log('轮播图返回数据', data)
       }
     }
   }

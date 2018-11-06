@@ -13,7 +13,7 @@ export default new Router({
   routes: [
     {
       path: '',
-      redirect: '/home'
+      redirect: '/property'
     },
     {
       path: '/login', //登录
