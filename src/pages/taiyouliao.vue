@@ -10,24 +10,21 @@
   import {Button} from 'element-ui';
   import NavigationBar from '../shared/navigation-bar';
 
-
   /**
    * 泰有料页面
    */
   export default {
     name: "taiyouliao",
-    data(){
-      return {
-
-      }
+    data() {
+      return {}
     },
-    components:{
+    components: {
       NavigationBar,
     },
-    created(){
+    created() {
 
     },
-    methods(){
+    methods() {
 
     }
   }
