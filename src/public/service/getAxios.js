@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as router from "element-ui"
+import qs from 'qs';
 
 /**
  * 后台接口数据请求底层封装
@@ -28,8 +29,12 @@ axios.interceptors.response.use(
   })
 
 //2.get、post、put、path方式封装
-export const getAxios = async function (type, url, data) {
-  var data = await axios[type](url, data)
+export const getAxios = async function (type, url, params) {
+  var data = await axios({
+    method: type,
+    params: params,
+    url: url,
+  })
     .then(response => {
       return response.data;
     }, err => {
