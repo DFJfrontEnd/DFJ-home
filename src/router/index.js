@@ -29,7 +29,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/property', //海外房产
+      path: '/property',  //海外房产
       name: 'house-property',
       component: HouseProperty
     },
