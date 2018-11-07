@@ -10,40 +10,58 @@
 const zhMessages = {
   navigation: {
     lists: [
-      {
-        path: '/home',
-        info: '首页'  //首页
-      },
+      // {
+      //   path: '/home',
+      //   info: '首页'  //首页
+      // },
       {
         path: '/property',
-        info: '房产',  //房产
-        subs: [
-          {
-            info: '全部房源', //全部房源
-            linkName: 'all-house'
-          },
-          {
-            info: '帮我找房', //帮我找房
-            linkName: 'house-help'
-          },
-          {
-            info: '购房宝典', //购房宝典
-            linkName: 'house-guide'
-          },
-        ]
+        info: '房产首页'  //房产首页
       },
       {
-        path: '/tourism',
-        info: '旅游'  //旅游
+        path: '/allhouse',
+        info: '全部房源'  //全部房源
       },
       {
-        path: '/shortrent',
-        info: '短租'  //短租
+        path: '/househelp',
+        info: '帮我找房'  //帮我找房
       },
       {
-        path: '/taiyouliao',
-        info: '泰有料' //泰有料
+        path: '/houseguide',
+        info: '购房宝典'  //购房宝典
       },
+
+
+      // {
+      //   path: '/property',
+      //   info: '房产',  //房产
+      //   subs: [
+      //     {
+      //       info: '全部房源', //全部房源
+      //       linkName: 'all-house'
+      //     },
+      //     {
+      //       info: '帮我找房', //帮我找房
+      //       linkName: 'house-help'
+      //     },
+      //     {
+      //       info: '购房宝典', //购房宝典
+      //       linkName: 'house-guide'
+      //     },
+      //   ]
+      // },
+      // {
+      //   path: '/tourism',
+      //   info: '旅游'  //旅游
+      // },
+      // {
+      //   path: '/shortrent',
+      //   info: '短租'  //短租
+      // },
+      // {
+      //   path: '/taiyouliao',
+      //   info: '泰有料' //泰有料
+      // },
     ],
     login: {
       signIn: '登录',  //登录
