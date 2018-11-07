@@ -19,7 +19,11 @@ const LangValue = {
 
 //轮播页面类型枚举枚举
 const BannerPageTypes = {
-  Start: 8
+  Start: 1,
+  Home: 2,
+  HousePropertyHome: 3,
+  TourismHome: 4,
+  TaiyouliaoHome: 5,
 }
 
 export {

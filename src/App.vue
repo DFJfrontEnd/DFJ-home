@@ -15,6 +15,7 @@
 <style lang="stylus">
   @import '/assets/css/base';
   @import '/assets/css/common';
+  @import '/assets/css/mixin.styl';
   #app
     font-size: 14px
 </style>
