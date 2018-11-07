@@ -5,17 +5,21 @@
     <div class="logo" :class="{'home-logo':isHomePage,'page-logo':!isHomePage}"></div>
     <div class="nav-box in-b clearfix">
       <div class="fl-l row-c" v-for="(router) in navs" :key="router.id">
-        <el-popover popper-class="nav-pop"
-                    placement="top"
-                    width="110"
-                    trigger="hover">
-          <div class="sub-box fz-14">
-            <div class="sub-item t-c c-p nav-sub-hover"
-                 v-for="subItem in router.subs" @click="goHouseSub(subItem.linkName)">{{subItem.info}}
-            </div>
-          </div>
-          <router-link slot="reference" :to="router.path">{{router.info}}</router-link>
-        </el-popover>
+        <router-link slot="reference" :to="router.path">{{router.info}}</router-link>
+
+        <!--&lt;!&ndash;子菜单气泡开始&ndash;&gt;-->
+        <!--<el-popover popper-class="nav-pop"-->
+                    <!--placement="top"-->
+                    <!--width="110"-->
+                    <!--trigger="hover">-->
+          <!--<div class="sub-box fz-14">-->
+            <!--<div class="sub-item t-c c-p nav-sub-hover"-->
+                 <!--v-for="subItem in router.subs" @click="goHouseSub(subItem.linkName)">{{subItem.info}}-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<router-link slot="reference" :to="router.path">{{router.info}}</router-link>-->
+        <!--</el-popover>-->
+        <!--&lt;!&ndash;子菜单气泡结束&ndash;&gt;-->
       </div>
     </div>
     <div class="action-box center">
