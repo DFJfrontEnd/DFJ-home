@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import NavigationBar from '../shared/navigation-bar';
+  import NavigationBar from '../../shared/navigation-bar';
 
   /**
    * 海外房产
