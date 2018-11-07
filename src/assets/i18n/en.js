@@ -8,8 +8,33 @@
  * 5.在js中使用：统一使用 this.$t('home.navigation.title') 替换
  */
 const enMessages = {
-  home: {
-    title: 'Sport Brands' //中文的品牌名
+  navigation: {
+    lists: [
+      // {
+      //   path: '/home',
+      //   info: 'shouye'  //首页
+      // },
+      {
+        path: '/property',
+        info: 'fangchan'  //房产
+      },
+      // {
+      //   path: '/tourism',
+      //   info: 'lvyou'  //旅游
+      // },
+      // {
+      //   path: '/shortrent',
+      //   info: 'duanzu'  //短租
+      // },
+      // {
+      //   path: '/taiyouliao',
+      //   info: 'taiyouliao' //泰有料
+      // },
+    ],
+    login: {
+      signIn: 'signIn',  //登录
+      signUp: 'signUp',  //注册
+    }
   },
 }
 

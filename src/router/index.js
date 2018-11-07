@@ -2,7 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../pages/home'
 import Login from '../pages/login/login-in'
-import HouseProperty from '../pages/house-property'
+import HouseProperty from '../pages/house/house-property'
+import AllHouse from '../pages/house/all-house'
+import HouseHelp from '../pages/house/house-help'
+import HouseGuide from '../pages/house/house-guide'
 import Tourism from '../pages/tourism'
 import ShortRent from '../pages/short-rent'
 import TaiYouLiao from '../pages/taiyouliao'
@@ -26,9 +29,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/property', //海外房产
+      path: '/property',  //海外房产
       name: 'house-property',
       component: HouseProperty
+    },
+    {
+      path: '/allhouse', //全部房源
+      name: 'all-house',
+      component: AllHouse
+    },
+    {
+      path: '/househelp', //帮忙找房
+      name: 'house-help',
+      component: HouseHelp
+    },
+    {
+      path: '/houseguide', //全部房源
+      name: 'house-guide',
+      component: HouseGuide
     },
     {
       path: '/tourism', //旅游
