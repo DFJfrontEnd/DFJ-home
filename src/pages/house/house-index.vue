@@ -1,6 +1,8 @@
 <template>
   <div id="house-index">
-    房产首页
+    <!--房产首页-->
+    <NavigationBar></NavigationBar>
+
     <div class="main bg">
       <div class="head-wrapper">
         <div class="headIn-fl">
@@ -48,18 +50,46 @@
         </div>
       </div>
 
+      <Footer></Footer>
     </div>
   </div>
 </template>
 
 <script>
+  import NavigationBar from '../../shared/navigation-bar';
+  import Footer from '../../shared/footer';
+  import {queryCity} from "../../public/service/http"
+  import {BannerPageTypes} from "../../public/enums/enums"
+
     export default {
-        name: "house-index"
+        name: "house-index",
+        data() {
+          return {}
+        },
+        components: {
+          NavigationBar,
+          Footer
+        },
+        created() {
+          this.getQueryCity()
+        },
+        method: {
+          /**
+           *获取城市列表
+           *
+           * @param pageType 页面类型
+           */
+          async getQueryCity() {
+            let data = await queryCity();
+            console.log('城市列表数据',data)
+          }
+        }
     }
 </script>
 
 <style scoped lang="stylus">
-
+  .testing
+    position relative
 .content
   width 1272px
   margin 0 auto
