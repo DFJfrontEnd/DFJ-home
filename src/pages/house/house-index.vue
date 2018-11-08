@@ -5,12 +5,12 @@
 
     <div class="main bg">
       <div class="head-wrapper">
-        <!--<div class="headIn-fl">-->
-        <!--<img class="headIn-pic" src="../../assets/images/fireworks/shouye/tequan/mianfeizhu/wz-banner.png"/>-->
-        <!--</div>-->
-        <!--<div class="headIn-fr">-->
-        <!--<img class="headIn-pic" src="../../assets/images/fireworks/house/fcsy_0011.png"/>-->
-        <!--</div>-->
+        <div class="headIn-fl">
+          <img class="headIn-pic" src="../../assets/images/fireworks/shouye/tequan/mianfeizhu/wz-banner.png"/>
+        </div>
+        <div class="headIn-fr">
+          <img class="headIn-pic" src="../../assets/images/fireworks/house/fcsy_0011.png"/>
+        </div>
       </div>
       <div class="content">
         <!--泰国房价走势 start-->
@@ -30,22 +30,22 @@
         <div class="house-floor">
           <h2>城市之光</h2>
           <ul class="city-list clearfix">
-            <!--<li class="city-item fl-l p-r mg-15">-->
-            <!--<img src="../../assets/images/fireworks/house/fcsy_0011.png"/>-->
-            <!--<div class="city-name p-center fz-28 fw">曼谷</div>-->
-            <!--</li>-->
-            <!--<li class="city-item fl-l p-r mg-15">-->
-            <!--<img src="../../assets/images/fireworks/house/fcsy_0011.png"/>-->
-            <!--<div class="city-name p-center fz-28 fw">曼谷</div>-->
-            <!--</li>-->
-            <!--<li class="city-item fl-l p-r mg-15">-->
-            <!--<img src="../../assets/images/fireworks/house/fcsy_0011.png"/>-->
-            <!--<div class="city-name p-center fz-28 fw">曼谷</div>-->
-            <!--</li>-->
-            <!--<li class="city-item fl-l p-r mg-15">-->
-            <!--<img src="../../assets/images/fireworks/house/fcsy_0011.png"/>-->
-            <!--<div class="city-name p-center fz-28 fw">曼谷</div>-->
-            <!--</li>-->
+            <li class="city-item fl-l p-r mg-15">
+              <img src="../../assets/images/fireworks/house/fcsy_0011.png"/>
+              <div class="city-name p-center fz-28 fw">曼谷</div>
+            </li>
+            <li class="city-item fl-l p-r mg-15">
+              <img src="../../assets/images/fireworks/house/fcsy_0011.png"/>
+              <div class="city-name p-center fz-28 fw">曼谷</div>
+            </li>
+            <li class="city-item fl-l p-r mg-15">
+              <img src="../../assets/images/fireworks/house/fcsy_0011.png"/>
+              <div class="city-name p-center fz-28 fw">曼谷</div>
+            </li>
+            <li class="city-item fl-l p-r mg-15">
+              <img src="../../assets/images/fireworks/house/fcsy_0011.png"/>
+              <div class="city-name p-center fz-28 fw">曼谷</div>
+            </li>
           </ul>
         </div>
       </div>
@@ -86,6 +86,30 @@
       }
     }
   }
+    export default {
+        name: "house-index",
+        data() {
+          return {}
+        },
+        components: {
+          NavigationBar,
+          Footer
+        },
+        created() {
+          this.getQueryCity()
+        },
+        methods: {
+          /**
+           *获取城市列表
+           *
+           * @param pageType 页面类型
+           */
+          async getQueryCity() {
+            let data = await queryCity();
+            console.log('城市列表数据',data)
+          }
+        }
+    }
 </script>
 
 <style scoped lang="stylus">
