@@ -74,7 +74,6 @@
       this.getQueryCity()
     },
     methods: {
-
       /**
        *获取城市列表
        *
@@ -86,30 +85,6 @@
       }
     }
   }
-    export default {
-        name: "house-index",
-        data() {
-          return {}
-        },
-        components: {
-          NavigationBar,
-          Footer
-        },
-        created() {
-          this.getQueryCity()
-        },
-        methods: {
-          /**
-           *获取城市列表
-           *
-           * @param pageType 页面类型
-           */
-          async getQueryCity() {
-            let data = await queryCity();
-            console.log('城市列表数据',data)
-          }
-        }
-    }
 </script>
 
 <style scoped lang="stylus">
