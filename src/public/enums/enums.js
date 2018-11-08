@@ -26,8 +26,11 @@ const BannerPageTypes = {
   TaiyouliaoHome: 5,
 }
 
+const Tel = '400-863-2227';
+
 export {
   RequestType,
   LangValue,
   BannerPageTypes,
+  Tel,
 }

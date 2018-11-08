@@ -67,7 +67,24 @@ const zhMessages = {
       signIn: '登录',  //登录
       signUp: '注册',  //注册
     }
-  }
+  },
+  footer: {
+    customerService: {
+      title: '客服热线',  //客服热线
+      day: '周一至周五 10:00-18:00', //周一至周五 10:00-18:00
+    },
+    contacts: {
+      title: '联系我们',  //联系我们
+      addr: {
+        name: '地址：',  //地址：
+        info: '深圳市南山区粤海街道海德三道天利中央商务广场B座29楼2901B', //深圳市南山区粤海街道海德三道天利中央商务广场B座29楼2901B
+      },
+      email: {
+        name: '邮箱：',  //邮箱：
+        info: 'info@dfj95.com',
+      },
+    }
+  },
 }
 
 export {
