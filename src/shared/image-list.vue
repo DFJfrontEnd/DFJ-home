@@ -3,15 +3,15 @@
     <slot name="title"></slot>
     <div class="list-box flex">
       <div class="list"
-           v-for="(item,index) in lists" :key="item.id"
            :style="{width:100/(lists.length/rows)+'%'}"
-           :class="{'pl-0':(index%cols ==0),'pr-0':(index%cols ==(cols-1))}">
+           v-for="(item,index) in lists" :key="item.id">
         <div class="img-box fl-1 bd-6 hd p-r">
           <img class="image c-p" :src="item.url" alt="dfj">
           <slot name="inner1"></slot>
         </div>
         <slot name="text" :item=item></slot>
       </div>
+
     </div>
 
   </div>
@@ -61,7 +61,9 @@
 <style scoped lang="stylus">
   #image-list
     .list-box
+      width 1272px
       flex-flow: row wrap;
+      margin-left: -15px
       .list
         padding 0 15px
         .img-box

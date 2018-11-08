@@ -82,6 +82,7 @@
       async getQueryCity() {
         let data = await queryCity();
         console.log('城市列表数据', data)
+
       }
     }
   }
