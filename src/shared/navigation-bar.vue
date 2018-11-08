@@ -1,6 +1,6 @@
 <template>
   <div id="navigation-bar"
-       class="flex p-f bg-w w100 testing"
+       class="flex p-f bg-w w100 z-1000"
        :class="{'home-color':isHomePage}">
     <div class="logo" :class="{'home-logo':isHomePage,'page-logo':!isHomePage}"></div>
     <div class="nav-box in-b clearfix">
@@ -9,15 +9,15 @@
 
         <!--&lt;!&ndash;子菜单气泡开始&ndash;&gt;-->
         <!--<el-popover popper-class="nav-pop"-->
-                    <!--placement="top"-->
-                    <!--width="110"-->
-                    <!--trigger="hover">-->
-          <!--<div class="sub-box fz-14">-->
-            <!--<div class="sub-item t-c c-p nav-sub-hover"-->
-                 <!--v-for="subItem in router.subs" @click="goHouseSub(subItem.linkName)">{{subItem.info}}-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<router-link slot="reference" :to="router.path">{{router.info}}</router-link>-->
+        <!--placement="top"-->
+        <!--width="110"-->
+        <!--trigger="hover">-->
+        <!--<div class="sub-box fz-14">-->
+        <!--<div class="sub-item t-c c-p nav-sub-hover"-->
+        <!--v-for="subItem in router.subs" @click="goHouseSub(subItem.linkName)">{{subItem.info}}-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<router-link slot="reference" :to="router.path">{{router.info}}</router-link>-->
         <!--</el-popover>-->
         <!--&lt;!&ndash;子菜单气泡结束&ndash;&gt;-->
       </div>
@@ -48,7 +48,6 @@
   /**
    * 导航栏公用组件
    *
-   * 1.全站顶部导航栏
    * @input isHomePage 首页导航局部样式控制
    * @output loginOut 登出
    */
