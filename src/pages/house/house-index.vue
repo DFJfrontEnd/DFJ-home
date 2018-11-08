@@ -73,7 +73,7 @@
         created() {
           this.getQueryCity()
         },
-        method: {
+        methods: {
           /**
            *获取城市列表
            *
