@@ -26,11 +26,19 @@ const BannerPageTypes = {
   TaiyouliaoHome: 5,
 }
 
+//公司电话
 const Tel = '400-863-2227';
+
+//外部链接
+const OutLinks = {
+  WeiBo: 'https://weibo.com/u/3237124162?is_hot=1',  //微博
+
+}
 
 export {
   RequestType,
   LangValue,
   BannerPageTypes,
   Tel,
+  OutLinks,
 }

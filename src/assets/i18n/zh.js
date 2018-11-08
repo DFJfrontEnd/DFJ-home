@@ -83,7 +83,68 @@ const zhMessages = {
         name: '邮箱：',  //邮箱：
         info: 'info@dfj95.com',
       },
-    }
+      focus: {
+        name: '关注我们',  //关注我们
+        gongZhongHao: '官方公众号',  //官方公众号
+      },
+      abouts: {
+        menus: {
+          lists: [
+            {
+              title: '关于我们', //关于我们
+              children: [
+                {
+                  title: '公司介绍', //公司介绍
+                  link: 'http://baidu.com',
+                },
+                {
+                  title: '联系我们', //联系我们
+                  link: 'http://baidu.com',
+                },
+                {
+                  title: '加入我们', //加入我们
+                  link: 'http://baidu.com',
+                },
+              ]
+            },
+            {
+              title: '安全保障', //安全保障
+              children: [
+                {
+                  title: '法律法规', //法律法规
+                  link: 'http://baidu.com',
+                },
+                {
+                  title: '隐私政策', //隐私政策
+                  link: 'http://baidu.com',
+                },
+                {
+                  title: '免责申明', //免责申明
+                  link: 'http://baidu.com',
+                },
+              ]
+            },
+            {
+              title: '新手引导', //安全保障
+              children: [
+                {
+                  title: '注册账号', //注册账号
+                  link: 'http://baidu.com',
+                },
+                {
+                  title: '购房流程', //购房流程
+                  link: 'http://baidu.com',
+                },
+              ]
+            },
+          ]
+        }
+      },
+      download: {
+        info: '扫描下载APP'  //扫描下载APP
+      },
+    },
+    copyRight: 'Copyright©2017 dfj95.com , All Rights Reserved 粤ICP备16037344号' //Copyright©2017 dfj95.com , All Rights Reserved 粤ICP备16037344号
   },
 }
 
