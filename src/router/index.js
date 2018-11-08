@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '../pages/home'
 import Login from '../pages/login/login-in'
 import HouseProperty from '../pages/house/house-property'
+import HouseIndex from '../pages/house/house-index'
 import AllHouse from '../pages/house/all-house'
 import HouseHelp from '../pages/house/house-help'
 import HouseGuide from '../pages/house/house-guide'
@@ -32,6 +33,11 @@ export default new Router({
       path: '/property',  //海外房产
       name: 'house-property',
       component: HouseProperty
+    },
+    {
+      path: '/houseindex',  //房产首页
+      name: 'house-index',
+      component: HouseIndex
     },
     {
       path: '/allhouse', //全部房源
