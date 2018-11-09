@@ -10,13 +10,13 @@
       </ImageList>
     </div>
 
-    <Footer></Footer>
+    <homeFooter></homeFooter>
   </div>
 </template>
 
 <script>
   import NavigationBar from '../../shared/navigation-bar';
-  import Footer from '../../shared/home-footer';
+  import HomeFooter from '../../shared/home-footer';
   import ImageList from '../../shared/image-list';
 
   /**
@@ -38,7 +38,7 @@
     },
     components: {
       NavigationBar,
-      Footer,
+      HomeFooter,
       ImageList,
     },
     created() {
