@@ -19,15 +19,15 @@ const zhMessages = {
         info: '房产首页'  //房产首页
       },
       {
-        path: '/allhouse',
+        path: '/property/allhouse',
         info: '全部房源'  //全部房源
       },
       {
-        path: '/househelp',
+        path: '/property/househelp',
         info: '帮我找房'  //帮我找房
       },
       {
-        path: '/houseguide',
+        path: '/property/houseguide',
         info: '购房宝典'  //购房宝典
       },
 

@@ -1,7 +1,8 @@
 <template>
-  <div id="house-index">
+  <div id="house-home">
     <!--房产首页-->
     <NavigationBar></NavigationBar>
+
 
     <div class="main bg">
       <div class="head-wrapper">
@@ -62,7 +63,7 @@
   import {BannerPageTypes} from "../../public/enums/enums"
 
   export default {
-    name: "house-index",
+    name: "house-home",
     data() {
       return {}
     },
