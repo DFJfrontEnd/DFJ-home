@@ -19,3 +19,5 @@ export const queryBanner = async function (pageType, ifvisible = true) {
   return data;
 }
 
+
+

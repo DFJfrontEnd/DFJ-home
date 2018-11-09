@@ -7,7 +7,7 @@
     <div class="main bg">
       <div class="head-wrapper">
         <div class="headIn-fl">
-          <img class="headIn-pic" src="../../assets/images/fireworks/shouye/tequan/mianfeizhu/wz-banner.png"/>
+          <img class="headIn-pic" style="display:block;" src="../../assets/images/fireworks/shouye/tequan/mianfeizhu/wz-banner.png"/>
         </div>
         <div class="headIn-fr">
           <img class="headIn-pic" src="../../assets/images/fireworks/house/fcsy_0011.png"/>
@@ -51,6 +51,14 @@
         </div>
       </div>
 
+      <div class="wd">
+        <ImageList :lists="cityLists" :rows="1">
+          <div slot="title" class="title fz-30 fw-bb">城市之光</div>
+          <!--<div slot="text" slot-scope="{ item }">{{item.city}}</div>-->
+          <div slot="inner1" class="p-a" slot-scope="{ item }" style="width: 100px;height: 30px;top: 0;left: 0;">{{item.url}}</div>
+        </ImageList>
+      </div>
+
       <Footer></Footer>
     </div>
   </div>
@@ -61,15 +69,25 @@
   import Footer from '../../shared/home-footer';
   import {queryCity} from "../../public/service/cities"
   import {BannerPageTypes} from "../../public/enums/enums"
+  import ImageList from '../../shared/image-list';
 
   export default {
     name: "house-home",
     data() {
-      return {}
+      return {
+        cityLists: [  //城市之光列表
+          {url: 'http://www.dfj95.com/res/web/image/index/key02.jpg',city: '曼谷'},
+          {url: 'http://www.dfj95.com/res/web/image/index/key02.jpg',city: '普吉'},
+          {url: 'http://www.dfj95.com/res/web/image/index/key02.jpg',city: '清迈'},
+          {url: 'http://www.dfj95.com/res/web/image/index/key02.jpg',city: '芭提雅'},
+
+        ]
+      }
     },
     components: {
       NavigationBar,
-      Footer
+      Footer,
+      ImageList
     },
     created() {
       this.getQueryCity()
@@ -90,44 +108,45 @@
 </script>
 
 <style scoped lang="stylus">
-  .testing
-    position relative
+  #house-home
+    .testing
+      position relative
 
-  .content
-    width 1272px
-    margin 0 auto
+    .content
+      width 1272px
+      margin 0 auto
 
-  .head-wrapper
-    max-width: 100%
-    min-width: 1272px
-    position: relative
-    .headIn-fl
+    .head-wrapper
+      max-width: 100%
+      min-width: 1272px
+      position: relative
+      .headIn-fl
+        width: 100%
+        padding-right: 300px
+
+      .headIn-fr
+        width: 300px
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+
+    .house-floor
+      .bg-purple-dark
+        height 30px
+        background: red
+
+    img
       width: 100%
-      padding-right: 300px
-
-    .headIn-fr
-      width: 300px
       height: 100%
-      position: absolute
-      top: 0
-      right: 0
 
-  .house-floor
-    .bg-purple-dark
-      height 30px
-      background: red
-
-  img
-    width: 100%
-    height: 100%
-
-  .city-item
-    width: 288px
-    height: 200px
-    border-radius 6px
-    overflow hidden
-    .city-name
-      color #fff
-      transform: translate(-50%, -50%);
+    .city-item
+      width: 288px
+      height: 200px
+      border-radius 6px
+      overflow hidden
+      .city-name
+        color #fff
+        transform: translate(-50%, -50%);
 
 </style>
