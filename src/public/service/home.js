@@ -11,7 +11,7 @@ import {RequestUrls} from "../enums/urls"
  */
 export const queryBanner = async function (pageType, ifvisible = true) {
   let lan = window.i18n.locale;
-  let data = await getAxios(RequestType.POST, RequestUrls.queryBanner, {
+  let data = await getAxios(RequestType.POST, RequestUrls.home.queryBanner, {
     type: pageType,
     lang: LangValue[lan],
     ifvisible: ifvisible

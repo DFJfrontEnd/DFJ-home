@@ -11,7 +11,7 @@ import {RequestUrls} from "../enums/urls"
  */
 export const queryCity = async function () {
   let lan = window.i18n.locale;
-  let data = await getAxios(RequestType.POST, RequestUrls.queryCity, {
+  let data = await getAxios(RequestType.POST, RequestUrls.cities.queryCity, {
     ishot: true,
     lang: LangValue[lan],
     active: true

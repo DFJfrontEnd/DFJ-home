@@ -3,10 +3,6 @@ import {LangValue, RequestType} from "../enums/enums"
 import {RequestUrls} from "../enums/urls"
 
 
-
-
-
-
 /**
  * 获取房产列表
  *
@@ -27,10 +23,11 @@ import {RequestUrls} from "../enums/urls"
  */
 export const selectBusPropertys = async function (pageType, ifvisible = true) {
   let lan = window.i18n.locale;
-  let data = await getAxios(RequestType.POST, RequestUrls.queryBanner, {
+  let data = await getAxios(RequestType.POST, RequestUrls.home.queryBanner, {
     type: pageType,
     lang: LangValue[lan],
     ifvisible: ifvisible
   });
   return data;
 }
+

@@ -7,14 +7,16 @@ import {RequestUrls} from "../enums/urls"
  *
  * @param type 获取消息的类型  1系统消息 2活动提醒 3.活动提醒非登录 4.房产订单提醒 5.景点门票提醒 6.一日游提醒 7.置业游提醒 8.房屋托管 21活动提醒（英文） 31 活动提醒非登录（英文）
  * @returns {Promise<void>}
+ * todo userid暂时写死
  */
 export const selectMessages = async function (type) {
+  let params = {};
+  params.userid = 10;
+  if (type) {
+    params.type = type;
+  }
 
-  let data = await getAxios(RequestType.POST, RequestUrls.queryCity, {
-    ishot: true,
-    lang: LangValue[lan],
-    active: true
-  });
+  let data = await getAxios(RequestType.POST, RequestUrls.queryCity, params);
   return data;
 }
 
