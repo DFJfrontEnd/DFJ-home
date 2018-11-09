@@ -6,12 +6,12 @@
       <router-view></router-view>
     </keep-alive>
 
-
     <!--<div class="wd">-->
     <!--<ImageList :lists="cityLists" rows="2">-->
     <!--<div slot="title" class="title fz-30 fw-bb">城市之光</div>-->
     <!--<div slot="text" slot-scope="{ item }">11</div>-->
     <!--&lt;!&ndash;<div slot="inner1" class="p-a" style="width: 100px;height: 30px;top: 0;left: 0;">54646</div>&ndash;&gt;-->
+
     <!--</ImageList>-->
     <!--</div>-->
 

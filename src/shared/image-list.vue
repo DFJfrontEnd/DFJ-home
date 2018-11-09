@@ -7,7 +7,9 @@
            v-for="(item,index) in lists" :key="item.id">
         <div class="img-box fl-1 bd-6 hd p-r">
           <img class="image c-p" :src="item.url" alt="dfj">
-          <slot name="inner1"></slot>
+          <slot name="inner1" :item=item></slot>
+          <slot name="inner2" :item=item></slot>
+          <slot name="inner3" :item=item></slot>
         </div>
         <slot name="text" :item=item></slot>
       </div>

@@ -59,7 +59,7 @@
 <script>
   import NavigationBar from '../../shared/navigation-bar';
   import Footer from '../../shared/home-footer';
-  import {queryCity} from "../../public/service/http"
+  import {queryCity} from "../../public/service/cities"
   import {BannerPageTypes} from "../../public/enums/enums"
 
   export default {

@@ -124,16 +124,15 @@
       .search
         margin-right: 16px
         .search-ic
-          bg-img('../assets/images/fireworks/shouye/shouye/gnsy_12.png')
+          bg-img('../assets/images/fireworks/shouye/shouye/gnsy_gy12.png')
       .msg
         .msg-ic
-          bg-img('../assets/images/fireworks/shouye/shouye/gnsy_14.png')
+          bg-img('../assets/images/fireworks/shouye/shouye/gnsy_gy14.png')
       .fz
         font-size: 14px
         color #999999
       .ic-box
         padding 8px 12px
-        background-color #DCDCDC
       .ic
         width: 16px
         height: 16px

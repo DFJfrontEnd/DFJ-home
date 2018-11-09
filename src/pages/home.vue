@@ -6,7 +6,7 @@
 
 <script>
   import NavigationBar from '../shared/navigation-bar';
-  import {queryBanner} from "../public/service/http"
+  import {queryBanner} from "../public/service/home"
   import {BannerPageTypes} from "../public/enums/enums"
 
   /**
